@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+    <a-scene>
+      <a-assets>
+        <img
+          id="fondo"
+          src="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_960_720.jpg"
+        />
+        <img
+          id="mercurio"
+          src="https://thumbs.dreamstime.com/b/textura-de-fondo-naranja-brillante-157493792.jpg"
+        />
+        <img
+          id="venus"
+          src="https://cdn.pixabay.com/photo/2020/02/16/05/59/alien-4852659_960_720.jpg"
+        />
+        <img
+          id="tierra"
+          src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg"
+        />
+        <img
+          id="marte"
+          src="https://cdn.pixabay.com/photo/2012/01/09/10/17/mars-11604_960_720.jpg"
+        />
+        <img
+          id="jupiter"
+          src="https://cdn.pixabay.com/photo/2017/06/08/15/39/winter-2383930_960_720.jpg"
+        />
+        <img
+          id="saturno"
+          src="https://media.istockphoto.com/photos/surface-of-planet-mars-8k-hdri-map-spherical-environment-panorama-picture-id1184972146?k=20&m=1184972146&s=612x612&w=0&h=6zSVef3ryp6Qyd4IcW9Iyiy4Am4P7hehz59Zjp0Mw_E="
+        />
+        <img
+          id="urano"
+          src="https://cdn.pixabay.com/photo/2017/06/23/17/46/desert-2435404__340.jpg"
+        />
+        <img id="neptuno"
+        src=https://cdn.pixabay.com/photo/2016/11/18/19/27/ground-1836537__340.jpg>
+        <img
+          id="pluton"
+          src="https://cdn.pixabay.com/photo/2018/12/18/23/40/death-valley-3883283__340.jpg"
+        />
+        <img
+          id="sol"
+          src="https://cdn.pixabay.com/photo/2012/11/28/10/16/stars-67616_960_720.jpg"
+        />
+      </a-assets>
+      <a-sphere
+        position="0 0 -30"
+        radius="10"
+        src="#sol"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 40000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+
+      <a-sphere
+        position="0 0 -60"
+        radius="3"
+        src="#mercurio"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 10000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+      <a-sphere
+        position="0 0 -90"
+        radius="3.2"
+        color="lime"
+        src="#venus"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 10000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+      <a-sphere
+        position="0 0 -120"
+        radius="3.5"
+        src="#tierra"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 10000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+      <a-sphere
+        position="0 0 -150"
+        radius="3.2"
+        src="#marte"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 10000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+      <a-sphere
+        position="0 0 -180"
+        radius="3.5"
+        src="#jupiter"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 10000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+      <a-sphere
+        position="0 0 -210"
+        radius="3.7"
+        src="#saturno"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 10000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+      <a-sphere
+        position="0 0 -240"
+        radius="3.7"
+        src="#urano"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 10000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+      <a-sphere
+        position="0 0 -270"
+        radius="3.7"
+        src="#neptuno"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 10000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+      <a-sphere
+        position="0 0 -300"
+        radius="3.7"
+        src="#pluton"
+        animation="
+property: rotation;
+to: 0 360 0;
+dur: 10000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sphere>
+      <a-sky
+        src="#fondo"
+        animation="
+property: rotation;
+to: 0 -180 0;
+dur: 60000;
+easing: linear;
+loop: true
+"
+      >
+      </a-sky>
+    </a-scene>
+  </body>
+</html>
+
